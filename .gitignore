@@ -1,6 +1,3 @@
-# Java module specific ignores
-target/
-
 ### IntelliJ ###
 .idea/
 /out/
@@ -8,4 +5,3 @@ target/
 
 ### Mac ###
 .DS_Store
-
