@@ -1,15 +1,21 @@
 package com.jetbrains.refactoring;
 
 
+import java.util.function.BiConsumer;
+
 public class ExtractFunctionalParameter {
     public static void main(String[] args) {
-        doStuff();
+        doStuff(new BiConsumer<Long, String>() {
+          public void accept(Long i, String s) {
+            Double d = stringToDouble(i + s);
+          }
+        });
     }
 
-    private static void doStuff() {
-        long i = 0;
-        String s = "d";
-        Double d = stringToDouble(i + s);
+    private static void doStuff(BiConsumer<Long, String> biConsumer) {
+      long i = 0;
+      String s = "d";
+      biConsumer.accept(i, s);
     }
 
 
