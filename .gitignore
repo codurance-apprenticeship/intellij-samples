@@ -1,7 +1,10 @@
-### IntelliJ ###
-.idea/
-/out/
-*.iml
-
-### Mac ###
-.DS_Store
+.idea/libraries
+.idea/usage.statistics.xml
+.idea/shelf/
+.idea/workspace.xml
+spring-tricks/target/
+groovy/.gradle
+groovy/buildSrc/.gradle
+groovy/buildSrc/build
+groovy/build
+/.idea/
